@@ -1,0 +1,8 @@
+{
+    "/tournote":{
+        "target":"http://localhost",
+        "changeOrigin":true
+
+    }
+
+}

@@ -1,0 +1,11 @@
+.foot{
+    width: 100%;
+    height: 60px;
+    background: #2E2727;
+}
+.text{
+    color: white;
+    text-align: center;
+    font-size: 16px;
+    line-height: 60px;
+}

@@ -1,0 +1,26 @@
+.container{
+    width: 1400px;
+    margin-top: 50px;
+    height: 100%;
+}
+
+.mytournote,.mytogether{
+    font-size: 20px;
+    width: 300px;
+    height: 50px;
+    border-radius: 5px;
+    line-height: 50px;
+    margin-bottom: 10px;
+}
+.mytogether:hover{
+    background: orange;
+    color: white;
+}
+.mytournote:hover{
+    background: orange;
+    color: white;
+}
+a{
+    text-decoration: none;
+    color: black;
+}

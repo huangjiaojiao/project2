@@ -1,0 +1,124 @@
+
+<div class="wrap">
+  <div class="top">
+    <img src="../../../assets/img/topimg/index-topBg2.jpg" alt="">
+    <div class="title">
+      <h2>一个想法从脑中闪过：来一场旅行吧！</h2>
+      <h3>旅途中我想与你为伴</h3>
+    </div>
+  </div>
+<!-- 热门结伴地 -->
+  <div class="hot">
+    <p>热门结伴地</p>
+    <hr>
+    <div class="hotplace">
+      <div class="place">
+        <img src="../../../assets/img/destination/hotaddress1.jpeg" alt="">
+        <div class="imgwrap"></div>
+        <div class="hover">
+          <div class="text">稻城</div>
+          <div class="data">&nbsp;&nbsp;发起197个结伴<br>&nbsp;&nbsp;2061人关注<br>&nbsp;&nbsp;440人报名</div>
+        </div>  
+      </div>
+      <div class="place">
+        <img src="../../../assets/img/destination/hotaddress2.png" alt="">
+        <div class="imgwrap"></div>
+        <div class="hover">
+          <div class="text">拉萨</div>
+          <div class="data">&nbsp;&nbsp;发起197个结伴<br>&nbsp;&nbsp;2061人关注<br>&nbsp;&nbsp;440人报名</div>      
+        </div> 
+      </div>
+      <div class="place">
+        <img src="../../../assets/img/destination/hotaddress3.jpeg" alt="">
+        <div class="imgwrap"></div>
+        <div class="hover">
+          <div class="text">青海湖</div>
+          <div class="data">&nbsp;&nbsp;发起197个结伴<br>&nbsp;&nbsp;2061人关注<br>&nbsp;&nbsp;440人报名</div>
+        </div>
+      </div>
+      <div class="place">
+        <img src="../../../assets/img/destination/hotaddress4.jpeg" alt="">
+        <div class="imgwrap"></div>
+        <div class="hover">
+          <div class="text">亚丁</div>
+          <div class="data">&nbsp;&nbsp;发起197个结伴<br>&nbsp;&nbsp;2061人关注<br>&nbsp;&nbsp;440人报名</div>
+        </div> 
+      </div>
+      <div class="place">
+        <img src="../../../assets/img/destination/hotaddress5.png" alt="">
+        <div class="imgwrap"></div>
+        <div class="hover">
+          <div class="text">色达</div>
+          <div class="data">&nbsp;&nbsp;发起197个结伴<br>&nbsp;&nbsp;2061人关注<br>&nbsp;&nbsp;440人报名</div>
+        </div>           
+      </div>
+      <div class="place">
+        <img src="../../../assets/img/destination/hotaddress6.jpeg" alt="">
+        <div class="imgwrap"></div>
+        <div class="hover">
+          <div class="text">额济纳旗</div>
+          <div class="data">&nbsp;&nbsp;发起197个结伴<br>&nbsp;&nbsp;2061人关注<br>&nbsp;&nbsp;440人报名</div>
+        </div>
+      </div>
+      <div class="place">
+        <img src="../../../assets/img/destination/hotaddress7.png" alt="">
+        <div class="imgwrap"></div>
+        <div class="hover">
+          <div class="text">西藏</div>
+          <div class="data">&nbsp;&nbsp;发起197个结伴<br>&nbsp;&nbsp;2061人关注<br>&nbsp;&nbsp;440人报名</div>      
+          </div>
+      </div>
+      <div class="place">
+        <img src="../../../assets/img/destination/hotaddress8.jpeg" alt="">
+        <div class="imgwrap"></div>
+        <div class="hover">
+          <div class="text">敦煌</div>
+          <div class="data">&nbsp;&nbsp;发起197个结伴<br>&nbsp;&nbsp;2061人关注<br>&nbsp;&nbsp;440人报名</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <hr>
+  <!-- 查询 -->
+  <div class="search">
+    <input type="text" placeholder="目的地" id="goalplace" [(ngModel)]="toCity" name="aa">
+    <input type="date" placeholder="出发时间" id="datepicker" [(ngModel)]="startDate" name="bb">
+    <button class="btn btn-success" (click)="doSearch()">查询</button>
+    <div class="publish">
+      <button class="btn btn-success " routerLink="/addtogether">+发布我的结伴计划</button>
+    </div>
+  </div>
+  
+  <div class="bottom">
+    <div class="bottom-wrap">
+
+    
+      <div class="together " *ngFor="let together of togethers" >
+        <a [routerLink]="'/xijietogether/'+together.tid">
+          <img src="/tournote/img/{{together.coverImg}}" alt="">
+          <div class="dayswrap">
+            <div class="days">
+              <span>{{together.day}}</span>
+              天后
+            </div>
+          </div>
+          <hr>
+          <p>{{together.title}}</p>
+          <span>{{together.intro}}</span>
+          <div class="user">
+            <img src="/tournote/img/{{together.userImgUrl}}" alt="">
+            <p>{{together.nikeName}}</p>
+          </div>
+          <div class="join">
+            已有{{together.count}}人加入
+            <div class="arrowwrap">
+                <div class="arrow"></div>
+            </div>
+          </div>
+        </a>
+      </div>
+      
+    </div>
+</div>
+

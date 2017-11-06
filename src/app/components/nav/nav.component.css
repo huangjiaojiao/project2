@@ -1,0 +1,62 @@
+
+.navbar-brand {
+    
+      padding: 0 0;
+     
+  }
+  .userHead{
+      width: 30px;
+      height: 30px;
+      border-radius: 15px;
+  }
+  .navbar-default {
+    background-color: #f8f8f8;
+    border-color: #e7e7e7;
+    margin-bottom: 0px;
+}
+  .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+      /* color: white; */
+      background-color:white;
+      height: 68px;
+      line-height: 30px;
+  }
+  
+  .container > .navbar-header, .container-fluid > .navbar-header, .container > .navbar-collapse, .container-fluid > .navbar-collapse {
+      margin-right: 0;
+      margin-left: 100px;
+  }
+  .container-fluid {
+      padding-right: 15px;
+      padding-left: 15px;
+      margin-right: auto;
+      margin-left: auto;
+      height: 70px;
+  }
+  .navbar-default .navbar-nav > li > a {
+      color: #777;
+      line-height: 30px;
+  }
+  .container-fluid[_ngcontent-c1] {
+      padding-right: 15px;
+      padding-left: 15px;
+      margin-right: 100px;
+      margin-left: auto;
+      height: 70px;
+  }
+
+  .backtop{
+      position: fixed;
+      bottom: 5%;
+      left: 90%;
+      z-index: 99;
+      width: 50px;
+      height: 50px;
+      background:orange;
+      border-radius: 5px;
+  }
+  .backtop span{
+      color: white;
+      font-size: 30px;
+      margin-left: 10px;
+      margin-top: 10px;
+  }

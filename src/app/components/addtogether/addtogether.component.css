@@ -1,0 +1,45 @@
+p{
+    margin-left: 130px;
+    font-size: 20px;
+    display: inline;
+    
+}
+span{
+    font-size: 14px;
+   
+}
+.col-xs-12{
+    width: 100%;
+    height: 30px;
+    margin-bottom: 20px;
+}
+.require{
+    font-size: 14px;
+    color: red;
+}
+.form-control {
+   
+    width: 500px;
+   
+}
+#goalplace,#startplace,#starttime,#activitydays,#limitpeoples{
+    width: 500px;
+    display: inline;
+}
+#connection1,#connection2,#connection3{
+    width: 250px;
+    display: inline;
+    
+}
+#description{
+    width: 700px;
+}
+.col-sm-10 img{
+    width: 200px;
+    height: 200px;
+}
+.btn{
+    background: orange;
+    border: 1px solid  orange;
+    color: white;
+}

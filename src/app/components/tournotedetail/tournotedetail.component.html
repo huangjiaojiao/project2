@@ -1,0 +1,39 @@
+<div class="wrap">
+  <div class="top">
+    <img src="/tournote/img/{{tour.contentImg}}" alt="">
+    <div class="title text-center" >
+      <h2 >{{tour.title}}</h2>
+      <h3>作者：{{tour.nikeName}}</h3>
+    </div>
+  </div>
+
+
+
+  <div class="container">
+    <div class="col-xs-8">
+        <p [innerHTML]="tour.content"></p>
+      <div class="reply">
+        <div class="replytitle">
+          回复游记
+        </div>
+        <textarea name="" id="replytext" cols="100" rows="10" [(ngModel)]="content"></textarea>
+        <button class="btn" (click)="doComment()">发表回复</button>
+      </div>
+    </div>
+    <div class="col-xs-4">
+      <div class="comments">
+        留言评论
+      </div>
+      <div class="usercomment" *ngFor="let cm of comments">
+        <img src="../../../assets/img/userImg/user01.jpeg" alt="">
+        {{cm.nikeName}}
+        <span>{{cm.pubDate}}</span>
+        <div class="commenttext">
+          {{cm.content}}
+        </div>
+      </div>
+
+      
+    </div>
+  </div>
+</div>

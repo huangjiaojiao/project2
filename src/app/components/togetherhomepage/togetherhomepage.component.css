@@ -1,0 +1,213 @@
+.top img{
+    width: 100%;
+    height: 350px;
+}
+h2{
+    color: white;
+   position: absolute;
+   font-weight: bold;
+    top: 20%;
+   left: 38%;
+  
+
+}
+
+h3{
+    color: white;
+   position: absolute;
+    top: 28%;
+   left: 45%;
+  
+
+}
+a{
+    text-decoration: none;
+    color: #3B3A3A;
+}
+
+p{
+    font-size: 20px;
+    margin-left: 20%;
+    margin-top: 20px;
+}
+.hotplace{
+    width: 1100px;
+    height: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.hover{
+    position: relative;
+    bottom: -65px;
+}
+/* 鼠标悬浮事件1开始 */
+.place:hover .hover{
+    bottom:0;
+    transition: 0.5s;
+}
+.place:hover .imgwrap{
+    background: black;
+    opacity: 0.5;
+}
+
+.place .imgwrap{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    
+}
+/* 鼠标悬浮事件1结束 */
+
+
+
+
+.place{
+    width: 250px;
+    height: 250px;
+    /* border: 1px solid black; */
+    overflow: hidden;
+    position: relative;
+
+}
+.place img{
+    width: 250px;
+    height: 250px;
+}
+.text{
+    color: white;
+    font-weight: bold;
+    font-size: 26px;
+    position: relative;
+    top: -110px;
+    left: 20px;
+    margin-bottom: 5px;
+}
+.data{
+    color: white;
+    position: relative;
+    top: -100px;
+    left: 20px;
+    border-left: 5px solid orange;
+    
+}
+
+input{
+    margin-right: 10px;
+    width: 200px;
+    height: 35px;
+    border: 1px solid #ccc; 
+    border-radius: 3px;
+}
+#goalplace{
+    margin-left: 20%;
+}
+.search{
+    margin-bottom: 20px;
+}
+.search button{
+    background: orange;
+    border: 1px solid orange;
+}
+.publish{
+    float: right;
+    padding-right: 20%;
+}
+.publish button{
+    background: orange;
+    border: 1px solid orange;
+    width: 250px;
+}
+.bottom{
+    width: 100%;
+    background: #efefef;
+
+}
+.bottom-wrap{
+    width: 1080px;
+    margin: 20px auto;
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+/* 鼠标悬浮事件2开始 */
+.together:hover{
+    background: white;
+}
+.together:hover .arrow{
+    background-position: -80px -80px;
+}
+
+/* 鼠标悬浮事件2结束 */
+.together hr{
+    width: 140px;
+    margin-left: -5px;
+}
+.dayswrap{
+    position: relative;
+}
+.days{
+    width: 70px;
+    height: 60px;
+    background: url("../../../assets/img/sprites5.png") no-repeat;
+    background-position:-80px 0px; 
+    position:absolute;
+    top: -40px;
+    left: 140px;
+    text-align: center;
+    padding-top: 20px;
+}
+.days span{
+    font-size: 26px;
+    color: #409f97;
+}
+
+.arrowwrap{
+    position: relative;
+}
+.arrow{
+    width: 40px;
+    height: 40px;
+    background: url(../../../assets/img/sprites5.png) no-repeat;
+    background-position: 0px -80px;
+    position: absolute;
+    top: -35px;
+    left: 160px;
+}
+.together{
+    width: 250px;
+    height: 500px;
+    padding-left: 20px;
+}
+.together img{
+    width: 210px;
+    height: 160px;
+    margin-top: 40px;
+}
+.together p{
+    margin-left: 0px;
+}
+.user img{
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+}
+.user p{
+    position: relative;
+    top:-55px;
+    left: 60px;
+    font-size: 16px;
+    color: orange;
+}
+
+.join{
+    font-size: 24px;
+}
+.bottom-wrap{
+    background: #efefef;
+}

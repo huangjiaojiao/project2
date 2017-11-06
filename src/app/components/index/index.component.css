@@ -1,0 +1,84 @@
+
+
+
+/* 清除轮播图距离导航条的空隙 */
+.carousel-inner {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    margin-top: -10px;
+}
+
+.writenote{
+    text-align: center;
+}
+.btn{
+    background: orange;
+    width: 100px;
+    color: white;
+    margin-top: 60px;
+  
+}
+.col-xs-6{
+    width: 550px;
+
+}
+.tourleft{
+    width: 200px;
+    float: left;
+
+}
+.tourleft img{
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+    
+}
+.author{
+    font-size: 20px;
+    margin-top: 10px;
+}
+.tourleft span{
+    color: orange;
+}
+.tourright{
+   width: 300px;
+}
+.tourright img{
+    width: 300px;
+    
+}
+.rightwrap{
+    width: 300px;
+    background: #f5f5f5;
+}
+.rightwrap span{
+    color: orange;
+    line-height: 40px;
+}
+
+.more{
+    width: 1100px;
+    text-align: center;
+    color: orange;
+    background: #f0efee;
+    margin: 0 auto;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.swipertext{
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    color: white;
+    font-size: 30px;
+}
+p{
+    color: black;
+}
+.tourright img{
+    width: 300px;
+    height: 170px;
+}

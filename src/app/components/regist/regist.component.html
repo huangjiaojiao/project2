@@ -1,0 +1,27 @@
+<div class="wrap">
+  <div class="logo">
+    <img src="../../../assets/img/logomin.png" alt="">
+  </div>
+  <div class="box">
+      <input type="text" placeholder="您的手机号" name="tel" [(ngModel)]="userTel">
+      <br>
+      
+      <br>
+      <button class="submit" (click)="doRegist()">立即注册</button>
+      <span [ngClass]="styleClass">{{msg}}</span>
+      <hr>
+    
+      <p>用合作网站账号直接登录</p>
+      <ul class="iconBox">
+        <li class="icon sina"></li>
+        <li class="icon qq"></li>
+        <li class="icon wechat"></li>
+      </ul>
+     
+  </div>
+  <div class="loginLink">
+    已有账号？
+    <a routerLink="/login">马上登录</a>
+  </div>
+
+</div>

@@ -1,0 +1,30 @@
+<div class="container">
+    
+    <div class="col-xs-8">
+      <h3>密码修改</h3>
+      <hr>
+      <form action="#" >
+        <div class="form-group">
+          <label for="password">新密码：</label>
+          <input type="text" placeholder="新密码" id="password" name="aa" [(ngModel)]="updatePassword.password">
+  
+        </div>
+
+        <div class="form-group">
+            <label for="repassword">重复密码：</label>
+            <input type="text" placeholder="重复密码" id="repassword" name="bb" [(ngModel)]="updatePassword.repassword">
+    
+        </div>
+        
+        <div class="form-group">
+            <label for="code">验证码：</label>
+            <input type="text" placeholder="验证码" id="code"[(ngModel)]="writecode" name="cc">
+            <button class="btn" id="getcode" (click)="doClick()">获取验证码</button>
+        </div>
+        
+        
+        <button class="btn" (click)="doPassword()">保存修改</button>
+      </form>
+    </div>
+  </div>
+  

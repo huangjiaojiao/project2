@@ -1,0 +1,13 @@
+/* You can add global styles to this file, and also import other style files */
+.swiper-pagination{
+    background: rgba(0,0,0,0.4);
+    height: 74px;
+    padding-top: 15px;
+}
+.swiper-pagination-bullet{
+    width: 100px !important;
+    height: 50px !important;
+    border: 2px solid orange;
+    border-radius: 3px !important;
+    overflow: hidden;
+}

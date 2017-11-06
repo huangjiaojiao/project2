@@ -1,0 +1,89 @@
+<div class="container-fulid">
+  <div class="row">
+    <div class="col-xs-12">
+      <!-- 轮播 -->
+      <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <span class="swipertext">15/Sep.2017 <br>台北||我喜欢上你时的内心活动</span>
+                    <img src="../../../assets/img/swiperImg/show01.jpeg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <span class="swipertext">15/Sep.2017 <br>台北||我喜欢上你时的内心活动</span>
+                    <img src="../../../assets/img/swiperImg/show02.jpeg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <span class="swipertext">15/Sep.2017 <br>台北||我喜欢上你时的内心活动</span>
+                    <img src="../../../assets/img/swiperImg/show03.jpeg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <span class="swipertext">15/Sep.2017 <br>台北||我喜欢上你时的内心活动</span>
+                    <img src="../../../assets/img/swiperImg/show04.jpeg" alt="">
+                </div>
+                
+            </div>
+            <!-- 如果需要分页器 -->
+            <div class="swiper-pagination"></div>
+            
+            <!-- 如果需要导航按钮 -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+            
+            <!-- 如果需要滚动条 -->
+            <div class="swiper-scrollbar"></div>
+        </div>
+      <!--轮播结束-->
+
+
+      <div class="writenote">
+            <img src="../../../assets/img/resident-hd.png" alt="">
+            <button class="btn" (click)="addTour">
+                <a routerLink="/addtournote">
+                    <span class="glyphicon glyphicon-pencil"></span>
+                    写游记
+                </a>
+                
+            </button>
+        </div>
+        <hr>
+
+       <div class="container">
+           <div class="row">
+                <div class="col-xs-6" *ngFor="let tour of tours">
+                  <div class="col-xs-4 tourleft">
+                      <h2>{{tour.type}}</h2>
+                      <p>发布时间：{{tour.publishDate}}</p>
+                      <img src="/tournote/img/{{tour.userImgUrl}}" alt="">
+                      <br>
+                      <p class="author">作者</p>
+                      <span>{{tour.nikeName}}</span>
+                  </div>
+                  <div class="col-xs-6 tourright" >
+                      <div class="rightwrap">
+                        <a [routerLink]="'/xijietournote/'+tour.tid">
+                         <img src="/tournote/img/{{tour.contentImg}}" alt="">
+                         <span>{{tour.title}}</span>
+                         <p>{{tour.content}}</p> 
+                        </a>
+                          
+                      </div>
+                      
+                  </div>
+                </div>
+
+                
+           </div>
+       </div>
+
+       <hr>
+
+       
+
+             <div class="more">
+                加载更多......
+             </div>
+
+    </div>
+  </div>
+
+</div>

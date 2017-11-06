@@ -1,0 +1,35 @@
+<div class="wrap">
+  <div class="top">
+    <input #file type="file" name="img" style="display:none" ng2FileSelect [uploader]="uploader" (change)="selectFile($event)">
+    <img src="{{imgUrl}}" alt="" >
+    <div class="title">
+      <img src="../../../assets/img/addtop.png" alt="" (click)="clickFile()">
+      <h3>设计游记头图</h3>
+      <h4>图片建议选择尺寸大于1680px的高清大图，如相机原图</h4>
+    </div>
+  </div>
+
+  <form action="#" method="post">
+    <div class="form-group">
+      <label for="notetitle"><span>*</span> 游记标题</label>
+      <input type="text" id="notetitle" name="te" [(ngModel)]="tour.title" >
+    </div>
+
+    <div class="form-group">
+        <label for="notetype"><span>*</span> 游记分类</label>
+        <select name="trr" id="notetype" [(ngModel)]="tour.type">
+          <option value="">请选择</option>            
+          <option value="出游攻略">出游攻略</option>
+          <option value="旅游行记">旅游行记</option>
+          <option value="点点滴滴">点点滴滴</option>
+          <option value="所见所闻">所见所闻</option>
+        </select>
+    </div>
+
+    <div class="ueditor">
+      <ueditor [config]="cfg" #ue></ueditor>
+    </div>
+    
+    <button class="btn" (click)="getContent()">发布游记</button>
+  </form>
+</div>

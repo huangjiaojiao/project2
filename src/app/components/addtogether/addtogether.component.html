@@ -1,0 +1,100 @@
+<div class="wrap">
+    <div class="col-xs-12">
+        <p>发起结伴</p>
+        <span>（一个真诚的请求，才会赢得更多靠谱的旅伴）</span>
+        
+        
+    </div>
+
+  <form class="form-horizontal">
+      <div class="form-group">
+        <label for="title1" class="col-sm-2 control-label"><p class="require">*</p>活动标题</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" id="title1" name="aaaaaa" placeholder="一句话开始一段靠谱旅程" [(ngModel)]="together.title">
+        </div>
+      </div>
+
+
+
+
+      <div class="form-group">
+        <label for="connection1" class="col-sm-2 control-label"><p class="require">*</p>联系方式</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" id="connection1" name="bb" placeholder="手机/" [(ngModel)]="together.tel">
+          <input type="text" class="form-control" id="connection2" name="cc" placeholder="QQ/" [(ngModel)]="together.qq">
+          <input type="text" class="form-control" id="connection3" name="dd" placeholder="微信/" [(ngModel)]="together.weixin">
+           &nbsp;&nbsp;(可选填)
+        </div>
+       
+      </div>
+
+
+
+
+      <div class="form-group">
+          <label for="goalplace" class="col-sm-2 control-label"><p class="require">*</p>目的地</label>
+          <div class="col-sm-10">
+            <input type="text" class="form-control" id="goalplace" name="ee" placeholder="请输入目的地" [(ngModel)]="together.toCity">
+          </div>
+      </div>
+     
+
+      <div class="form-group">
+          <label for="startplace" class="col-sm-2 control-label"><p class="require">*</p>出发地</label>
+          <div class="col-sm-10">
+            <input type="text" class="form-control" id="startplace" name="ff" placeholder="请输入出发地" [(ngModel)]="together.fromCity"> 
+          </div>
+      </div>
+
+      <div class="form-group">
+          <label for="starttime" class="col-sm-2 control-label"><p class="require">*</p>出发时间</label>
+          <div class="col-sm-10">
+            <input type="date" class="form-control" id="starttime" name="gg" placeholder="请输入出发日期"  [(ngModel)]="together.startDate">
+          </div>
+      </div>
+
+
+      <div class="form-group">
+          <label for="activitydays" class="col-sm-2 control-label"><p class="require">*</p>活动天数</label>
+          <div class="col-sm-10">
+            <input type="text" class="form-control" id="activitydays" name="hh" [(ngModel)]="together.lastDays">&nbsp;&nbsp;天
+          </div>
+      </div>
+
+
+      <div class="form-group">
+          <label for="limitpeoples" class="col-sm-2 control-label"><p class="require">*</p>限制人数</label>
+          <div class="col-sm-10">
+            <input type="text" class="form-control" id="limitpeoples" name="ii" [(ngModel)]="together.limitNum">&nbsp;&nbsp;人
+          </div>
+      </div>
+
+
+      <div class="form-group">
+          <label for="description" class="col-sm-2 control-label"><p class="require">*</p>结伴描述</label>
+          <div class="col-sm-10">
+            <textarea name="textarea" id="description" class="form-control" name="jj" [(ngModel)]="together.intro" rows="6" placeholder="尽可能详细将你的意向说清楚，除非你愿意尝试下边的：a.如果你想结伴无人问津 b.如果你想浪费更多时间在诸葛沟通相同问题 c.如果你想让旅途遇到猪队友"></textarea>
+          </div>
+      </div>
+
+
+
+      <div class="form-group">
+        <label for="firstimg" class="col-sm-2 control-label"><p class="require">*</p>封面图片</label>
+        <div class="col-sm-10">
+          <!-- <input text="file" id="firstimg" class="form-control" > -->
+                  
+          <input #file type="file" style="display:none" name="kk" (change)="selectFile($event)" ng2FileSelect [uploader]="uploader">
+          <img src="{{imgUrl}}" alt="" width="100px" height="100px" (click)="clickFile()">
+        </div>
+    </div>
+      
+      <div class="form-group">
+        <div class="col-sm-offset-2 col-sm-10">
+          <button type="submit" class="btn " (click)="doUpload()">发表结伴</button>
+        </div>
+      </div>
+    </form>
+
+</div>
+
